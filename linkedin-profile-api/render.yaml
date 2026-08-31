@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: linkedin-profile-api
+    runtime: docker
+    healthCheckPath: /health
+    envVars:
+      - key: LINKEDIN_LI_AT
+        sync: false
+      - key: LINKEDIN_JSESSIONID
+        sync: false
+      - key: API_KEY
+        sync: false
